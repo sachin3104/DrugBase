@@ -1,9 +1,19 @@
+import { Metadata } from "next";
+
+import DefaultLayout from "@/components/layouts/DefaultLayout";
+import Index from "@/components/dashboard";
+
+export const metadata: Metadata = {
+  title: "DrugBase - Drug Research Platform",
+  description: "Discription about Drugbase",
+};
+
 export default function Home() {
   return (
     <>
-      <div className="h-screen">
-        <p>Default Layout</p>
-      </div>
+      <DefaultLayout>
+        <Index />
+      </DefaultLayout>
     </>
   );
 }
